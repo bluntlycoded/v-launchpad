@@ -1,0 +1,157 @@
+/* General Reset */
+body, h1, h2, h3, p, ul, li {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+/* Body Styling */
+body {
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f4f4f4;
+}
+
+/* Section Styling */
+section {
+    padding: 4rem 2rem;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Header Styling */
+.header {
+    background-color: #ff0000; /* Bright Red */
+    color: white;
+    padding: 1rem 0;
+}
+
+.header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 2rem;
+}
+
+.navbar .nav-links {
+    display: flex;
+    gap: 1rem;
+}
+
+.navbar .nav-links a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.navbar .nav-links a:hover {
+    color: #ffcccb; /* Light Red */
+}
+
+/* Footer Styling */
+.footer {
+    background-color: #ff0000; /* Bright Red */
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    margin-top: 1rem;
+}
+
+.footer a {
+    color: white;
+    text-decoration: none;
+}
+
+.footer a:hover {
+    text-decoration: underline;
+}
+
+/* Event Tracks Slider */
+#tracks {
+    padding: 4rem 2rem;
+    background-color: #f9f9f9;
+}
+
+#tracks h2 {
+    text-align: center;
+    margin-bottom: 2rem;
+    color: #ff0000;
+}
+
+#trackSlider {
+    display: flex;
+    transition: transform 0.7s ease-in-out;
+}
+
+#trackSlider > div {
+    min-width: 100%;
+    text-align: center;
+    padding: 2rem;
+    border-radius: 0.5rem;
+    background: #fff;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+#trackSlider h3 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    color: #333;
+}
+
+#trackSlider p {
+    color: #555;
+    font-size: 1rem;
+}
+
+/* Navigation Buttons */
+#prevTrack, #nextTrack {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: #ff0000;
+    color: #fff;
+    border: none;
+    padding: 1rem;
+    cursor: pointer;
+    border-radius: 50%;
+    font-size: 1.5rem;
+    z-index: 10;
+    transition: background-color 0.3s ease;
+}
+
+#prevTrack:hover, #nextTrack:hover {
+    background-color: #ff6666;
+}
+
+#prevTrack {
+    left: 1rem;
+}
+
+#nextTrack {
+    right: 1rem;
+}
+
+/* Responsiveness */
+@media (max-width: 768px) {
+    #trackSlider > div {
+        padding: 1rem;
+    }
+
+    #trackSlider h3 {
+        font-size: 1.25rem;
+    }
+
+    #trackSlider p {
+        font-size: 0.9rem;
+    }
+
+    #prevTrack, #nextTrack {
+        padding: 0.75rem;
+        font-size: 1.25rem;
+    }
+}

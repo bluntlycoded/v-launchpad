@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register Now - V-LaunchPad 2025</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css">
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            AOS.init({ duration: 1000, easing: "ease-in-out", once: true });
+        });
+    </script>
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+        }
+        .text-justify {
+            text-align: justify;
+        }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-800">
+    <!-- Navbar -->
+    <header class="bg-[#841a1a] text-white py-4 px-6 sticky top-0 shadow z-50">
+        <div class="container mx-auto flex justify-between items-center">
+          <h1 class="text-2xl font-bold">V-LaunchPad 2025</h1>
+          <button class="md:hidden text-white focus:outline-none" id="menu-button">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
+            </svg>
+          </button>
+          <nav class="hidden md:block" id="menu">
+            <ul class="flex space-x-6">
+              <li><a href="index.html" class="hover:text-gray-300">Home</a></li>
+              <li class="relative group">
+                <a href="#" class="hover:text-gray-300">About</a>
+                <ul class="absolute left-0 mt-2 hidden group-hover:block group-hover-delay bg-[#841a1a] shadow-lg" id="about-menu">
+                  <li><a href="about.html" class="block px-4 py-2 hover:text-gray-300">About V-LaunchPad</a></li>
+                  <li><a href="about-vtbif.html" class="block px-4 py-2 hover:text-gray-300">About VTBIF</a></li>
+                  <li><a href="about-vsb.html" class="block px-4 py-2 hover:text-gray-300">About VSB</a></li>
+                </ul>
+              </li>
+              <li><a href="why-vlaunchpad.html" class="hover:text-gray-300">Why V-LaunchPad</a></li>
+              <li><a href="teams.html" class="hover:text-gray-300">Teams</a></li>
+              <li><a href="faq.html" class="hover:text-gray-300">FAQ</a></li>
+              <li><a href="Vlaunch-expo.html" class="hover:text-gray-300">V Launch Expo</a></li>
+              <li><a href="./guidelines-vlaunchpad2k25.pdf" class="hover:text-gray-300">Guidelines</a></li>
+              <li><a href="contact.html" class="hover:text-gray-300">Contact</a></li>
+            </ul>
+          </nav>
+        </div>
+        <div class="hidden md:hidden" id="mobile-menu">
+          <ul class="flex flex-col space-y-2 mt-4">
+            <li><a href="index.html" class="hover:text-gray-300">Home</a></li>
+            <li><a href="about.html" class="hover:text-gray-300">About V-Launchpad</a></li>
+            
+            <li><a href="about-vtbif.html" class="hover:text-gray-300">About VTBIF</a></li>
+            <li><a href="about-vsb.html" class="hover:text-gray-300">About VSB</a></li>
+            <li><a href="why-vlaunchpad.html" class="hover:text-gray-300">Why V-LaunchPad</a></li>
+            <li><a href="teams.html" class="hover:text-gray-300">Teams</a></li>
+            <li><a href="faq.html" class="hover:text-gray-300">FAQ</a></li>
+            <li><a href="Vlaunch-expo.html" class="hover:text-gray-300">V Launch Expo</a></li>
+            <li><a href="./guidelines-vlaunchpad2k25.pdf" class="hover:text-gray-300">Guidelines</a></li>
+            <li><a href="contact.html" class="hover:text-gray-300">Contact</a></li>
+          </ul>
+        </div>
+        <script>
+          const menuButton = document.getElementById('menu-button');
+          const mobileMenu = document.getElementById('mobile-menu');
+          menuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+          });
+      
+          const aboutMenu = document.getElementById('about-menu');
+          const aboutParent = aboutMenu.parentElement;
+      
+          let aboutTimeout;
+      
+          aboutParent.addEventListener('mouseenter', () => {
+            clearTimeout(aboutTimeout);
+            aboutMenu.classList.remove('hidden');
+          });
+      
+          aboutParent.addEventListener('mouseleave', () => {
+            aboutTimeout = setTimeout(() => {
+              aboutMenu.classList.add('hidden');
+            }, 300); // 5 seconds delay
+          });
+        </script>
+      </header>
+
+    <!-- Register Now Section -->
+    <main class="py-16 bg-white">
+        <div class="container mx-auto px-6 text-center" data-aos="fade-up">
+            <h2 class="text-4xl font-bold text-[#841a1a] mb-6">Register Now</h2>
+            <p class="text-lg text-gray-600 leading-relaxed max-w-3xl mx-auto mb-8">
+                Join V-LaunchPad 2025 to take your startup to the next level. Register now and take the first step towards success.
+            </p>
+            <p class="text-md text-gray-700 leading-relaxed max-w-3xl mx-auto mb-8">
+                Please note: To register, first make the payment through the "Payment Link" button below. After completing the payment, take a screenshot of the payment confirmation. Then, proceed to fill out the registration form through the "Fill Out Your Pitch" button.
+            </p>
+            <p class="text-md text-red-700 leading-relaxed max-w-3xl mx-auto mb-8">Disclaimer: Payments are Non-refundable</p>
+            <br>
+            <br>
+            
+
+
+                <h3 class="text-3xl font-semibold text-[#841a1a] mb-6 text-center">Registration Options</h3>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <!-- Pricing Option 1 -->
+                    <div class="bg-white shadow-md rounded-lg p-6 text-center">
+                        <h2 class="text-xl font-semibold text-gray-800 mb-4">Ideation</h2>
+                        <h4 class="text-gray-800 font-medium mb-2"><i><strong>(TRL 4 and 5)*</strong></i></h4>
+                        
+                        <ul class="list-disc list-inside text-gray-600 text-justify">
+                            <li>2 Free master Classes</li>
+                            <li>4 Rounds of Shortlisting</li>
+                            <li>No Stalls</li>
+                        </ul>
+                        <p class="text-lg font-bold text-gray-800 mt-4">₹500 + GST</p>
+                    </div>
+    
+                    <!-- Pricing Option 2 -->
+                    <div class="bg-white shadow-md rounded-lg p-6 text-center">
+                        <h2 class="text-xl font-semibold text-gray-800 mb-4">VC Pitching Without Stalls</h2>
+                        <h4 class="text-gray-800 font-medium mb-2"><i><strong>(TRL 6-9)*</strong></i></h4>
+                        
+                        <ul class="list-disc list-inside text-gray-600 text-justify">
+                            <li>2 Free master Classes</li>
+                            <li>4 Rounds of Shortlisting</li>
+                            <li>Stalls can be booked at a later stage by paying ₹5000 + GST per stall (subject to availability)</li>
+                        </ul>
+                        <p class="text-lg font-bold text-gray-800 mt-4">₹3000 + GST</p>
+                    </div>
+    
+                    <!-- Pricing Option 3 -->
+                    <div class="bg-white shadow-md rounded-lg p-6 text-center">
+                        <h2 class="text-xl font-semibold text-gray-800 mb-4">VC Pitching With Stalls</h2>
+                        <h4 class="text-gray-800 font-medium mb-2"><i><strong>(TRL 6 to 9)*</strong></i></h4>
+                        
+                        <ul class="list-disc list-inside text-gray-600 text-justify">
+                            <li>2 Free master Classes</li>
+                            <li>3 Rounds of Shortlisting (Direct Entry to Quarter Finals)</li>
+                            <li>No additional payment for stalls if qualified for finals</li>
+                        </ul>
+                        <p class="text-lg font-bold text-gray-800 mt-4">₹4000 + GST</p>
+                    </div>
+                </div>
+            </div>
+            <br>
+<a href="./img/trl.webp"><p class="text-md text-red-700 leading-relaxed max-w-3xl mx-auto mb-8">* Check your TRL Level <u>Here</u> </p></a>
+            <div class="container mx-auto px-6">
+            <br>
+            <br>
+            <div class="flex justify-center space-x-6">
+                 <a href="https://events.vitap.ac.in/e/v-launchpad-2025-41e8b659-9172-4924-8e00-83f7fa82221a" class="bg-gray-800 text-white px-8 py-4 rounded-lg font-semibold hover:bg-gray-700 transition">Payment Link</a>
+
+
+ <a href="fill-out-your-pitch.html" class="bg-[#841a1a] text-white px-8 py-4 rounded-lg font-semibold hover:bg-[#a61e1e] transition">Submit Your Pitch</a>
+
+
+
+<!--<a href="#" class="bg-[#841a1a] text-white px-8 py-4 rounded-lg font-semibold hover:bg-[#a61e1e] transition">Register For Demonstration</a>-->
+                 
+            </div>
+        </div>
+    </main>
+
+  
+
+    <!-- Footer -->
+    <footer class="bg-[#841a1a] text-white py-6 text-center">
+        <p>&copy; 2025 V-LaunchPad. All rights reserved.</p>
+    </footer>
+</body>
+</html>

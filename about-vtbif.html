@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About VTBIF - V-LaunchPad 2025</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css">
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            AOS.init({ duration: 1000, easing: "ease-in-out", once: true });
+        });
+    </script>
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+        }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-800">
+    <!-- Navbar -->
+            <header class="bg-[#841a1a] text-white py-4 px-6 sticky top-0 shadow z-50">
+        <div class="container mx-auto flex justify-between items-center">
+          <h1 class="text-2xl font-bold">V-LaunchPad 2025</h1>
+          <button class="md:hidden text-white focus:outline-none" id="menu-button">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
+            </svg>
+          </button>
+          <nav class="hidden md:block" id="menu">
+            <ul class="flex space-x-6">
+              <li><a href="index.html" class="hover:text-gray-300">Home</a></li>
+              <li class="relative group">
+                <a href="#" class="hover:text-gray-300">About</a>
+                <ul class="absolute left-0 mt-2 hidden group-hover:block group-hover-delay bg-[#841a1a] shadow-lg" id="about-menu">
+                  <li><a href="about.html" class="block px-4 py-2 hover:text-gray-300">About V-LaunchPad</a></li>
+                  <li><a href="about-vtbif.html" class="block px-4 py-2 hover:text-gray-300">About VTBIF</a></li>
+                  <li><a href="about-vsb.html" class="block px-4 py-2 hover:text-gray-300">About VSB</a></li>
+                </ul>
+              </li>
+              <li><a href="why-vlaunchpad.html" class="hover:text-gray-300">Why V-LaunchPad</a></li>
+              <li><a href="teams.html" class="hover:text-gray-300">Teams</a></li>
+              <li><a href="faq.html" class="hover:text-gray-300">FAQ</a></li>
+              <li><a href="Vlaunch-expo.html" class="hover:text-gray-300">V Launch Expo</a></li>
+              <li><a href="./guidelines-vlaunchpad2k25.pdf" class="hover:text-gray-300">Guidelines</a></li>
+              <li><a href="contact.html" class="hover:text-gray-300">Contact</a></li>
+            </ul>
+          </nav>
+        </div>
+        <div class="hidden md:hidden" id="mobile-menu">
+          <ul class="flex flex-col space-y-2 mt-4">
+            <li><a href="index.html" class="hover:text-gray-300">Home</a></li>
+            <li><a href="about.html" class="hover:text-gray-300">About V-Launchpad</a></li>
+            
+            <li><a href="about-vtbif.html" class="hover:text-gray-300">About VTBIF</a></li>
+            <li><a href="about-vsb.html" class="hover:text-gray-300">About VSB</a></li>
+            <li><a href="why-vlaunchpad.html" class="hover:text-gray-300">Why V-LaunchPad</a></li>
+            <li><a href="teams.html" class="hover:text-gray-300">Teams</a></li>
+            <li><a href="faq.html" class="hover:text-gray-300">FAQ</a></li>
+            <li><a href="Vlaunch-expo.html" class="hover:text-gray-300">V Launch Expo</a></li>
+            <li><a href="./guidelines-vlaunchpad2k25.pdf" class="hover:text-gray-300">Guidelines</a></li>
+            <li><a href="contact.html" class="hover:text-gray-300">Contact</a></li>
+          </ul>
+        </div>
+        <script>
+          const menuButton = document.getElementById('menu-button');
+          const mobileMenu = document.getElementById('mobile-menu');
+          menuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+          });
+      
+          const aboutMenu = document.getElementById('about-menu');
+          const aboutParent = aboutMenu.parentElement;
+      
+          let aboutTimeout;
+      
+          aboutParent.addEventListener('mouseenter', () => {
+            clearTimeout(aboutTimeout);
+            aboutMenu.classList.remove('hidden');
+          });
+      
+          aboutParent.addEventListener('mouseleave', () => {
+            aboutTimeout = setTimeout(() => {
+              aboutMenu.classList.add('hidden');
+            }, 300); // 5 seconds delay
+          });
+        </script>
+      </header>
+      
+
+    <!-- About VTBIF Section -->
+    <main class="py-16 bg-white">
+        <div class="container mx-auto px-6 text-center" data-aos="fade-up">
+            <h2 class="text-4xl font-bold text-[#841a1a] mb-6">About VTBIF</h2>
+            <p class="text-lg text-gray-600 leading-relaxed max-w-3xl mx-auto mb-6">
+                The VIT-AP Technology Business Incubation Foundation (VTBIF) is a state-of-the-art incubation center dedicated to empowering startups and fostering a culture of innovation. As a catalyst for entrepreneurial success, VTBIF provides comprehensive support, mentorship, and resources to early-stage startups and innovative ventures.
+            </p>
+        </div>
+
+        <!-- Key Features Section -->
+        <section id="key-features" class="py-16 bg-gray-100" data-aos="fade-up">
+            <div class="container mx-auto px-6">
+                <h3 class="text-3xl font-semibold text-[#841a1a] mb-6 text-center">Key Features</h3>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <div class="bg-white shadow-md rounded-lg p-6 text-center">
+
+                        <h4 class="text-xl font-semibold text-gray-800 mb-2">Expert Mentorship</h4>
+                        <p class="text-gray-600">
+                            Connect with industry experts to refine your business strategies and drive growth.
+                        </p>
+                    </div>
+                    <div class="bg-white shadow-md rounded-lg p-6 text-center">
+
+                        <h4 class="text-xl font-semibold text-gray-800 mb-2">Funding Support</h4>
+                        <p class="text-gray-600">
+                            Access seed funding opportunities to scale your startup effectively.
+                        </p>
+                    </div>
+                    <div class="bg-white shadow-md rounded-lg p-6 text-center">
+
+                        <h4 class="text-xl font-semibold text-gray-800 mb-2">State-of-the-Art Workspace</h4>
+                        <p class="text-gray-600">
+                            Leverage a collaborative workspace equipped with modern facilities.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Success Stories Section -->
+        <section id="success-stories" class="py-16 bg-white" data-aos="fade-up">
+            <div class="container mx-auto px-6 text-center">
+                <h3 class="text-3xl font-semibold text-[#841a1a] mb-6">Success Stories</h3>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <div class="bg-gray-100 shadow-md rounded-lg p-6">
+                        <h4 class="text-xl font-semibold text-gray-800 mb-4">FinTech Startup</h4>
+                        <p class="text-gray-600">
+                            Secured ₹50 Lakh seed funding and expanded operations across three states.
+                        </p>
+                    </div>
+                    <div class="bg-gray-100 shadow-md rounded-lg p-6">
+                        <h4 class="text-xl font-semibold text-gray-800 mb-4">EdTech Venture</h4>
+                        <p class="text-gray-600">
+                            Gained access to global mentorship and launched a successful platform in 2023.
+                        </p>
+                    </div>
+                    <div class="bg-gray-100 shadow-md rounded-lg p-6">
+                        <h4 class="text-xl font-semibold text-gray-800 mb-4">AgriTech Innovation</h4>
+                        <p class="text-gray-600">
+                            Partnered with international accelerators and developed sustainable solutions.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+       
+    </main>
+
+    <!-- Footer -->
+ <footer class="bg-[#841a1a] text-white py-6 text-center">
+        <p>&copy; 2025 V-LaunchPad. All rights reserved.</p>
+        <div class="flex justify-center mt-4 space-x-4">
+          <!-- Instagram Icon -->
+          <a href="https://www.instagram.com/vlaunchpad_vitap/" target="_blank" class="text-white hover:underline flex items-center">
+            <i class="fa-brands fa-instagram text-xl mr-2"></i>
+            Instagram
+          </a>
+          <!-- LinkedIn Icon -->
+          <a href="https://www.linkedin.com/company/v-launchpad/" target="_blank" class="text-white hover:underline flex items-center">
+            <i class="fa-brands fa-linkedin text-xl mr-2"></i>
+            LinkedIn
+          </a>
+          <!--Youtube Icon-->
+          <a href="https://www.youtube.com/@V-LaunchpadVIT-AP" target="_blank" class="text-white hover:underline flex items-center">
+            <i class="fa-brands fa-youtube text-xl mr-2"></i>
+            Youtube
+          </a>
+        </div>
+        <!-- Font Awesome CDN -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/js/all.min.js" crossorigin="anonymous"></script>
+      </footer>
+</body>
+</html>

@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FAQ - V-LaunchPad 2025</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+        }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-800">
+    <!-- Header -->
+        <header class="bg-[#841a1a] text-white py-4 px-6 sticky top-0 shadow z-50">
+        <div class="container mx-auto flex justify-between items-center">
+          <h1 class="text-2xl font-bold">V-LaunchPad 2025</h1>
+          <button class="md:hidden text-white focus:outline-none" id="menu-button">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
+            </svg>
+          </button>
+          <nav class="hidden md:block" id="menu">
+            <ul class="flex space-x-6">
+              <li><a href="index.html" class="hover:text-gray-300">Home</a></li>
+              <li class="relative group">
+                <a href="#" class="hover:text-gray-300">About</a>
+                <ul class="absolute left-0 mt-2 hidden group-hover:block group-hover-delay bg-[#841a1a] shadow-lg" id="about-menu">
+                  <li><a href="about.html" class="block px-4 py-2 hover:text-gray-300">About V-LaunchPad</a></li>
+                  <li><a href="about-vtbif.html" class="block px-4 py-2 hover:text-gray-300">About VTBIF</a></li>
+                  <li><a href="about-vsb.html" class="block px-4 py-2 hover:text-gray-300">About VSB</a></li>
+                </ul>
+              </li>
+              <li><a href="why-vlaunchpad.html" class="hover:text-gray-300">Why V-LaunchPad</a></li>
+              <li><a href="teams.html" class="hover:text-gray-300">Teams</a></li>
+              <li><a href="faq.html" class="hover:text-gray-300">FAQ</a></li>
+              <li><a href="Vlaunch-expo.html" class="hover:text-gray-300">V Launch Expo</a></li>
+              <li><a href="./guidelines-vlaunchpad2k25.pdf" class="hover:text-gray-300">Guidelines</a></li>
+              <li><a href="contact.html" class="hover:text-gray-300">Contact</a></li>
+            </ul>
+          </nav>
+        </div>
+        <div class="hidden md:hidden" id="mobile-menu">
+          <ul class="flex flex-col space-y-2 mt-4">
+            <li><a href="index.html" class="hover:text-gray-300">Home</a></li>
+            <li><a href="about.html" class="hover:text-gray-300">About V-Launchpad</a></li>
+            
+            <li><a href="about-vtbif.html" class="hover:text-gray-300">About VTBIF</a></li>
+            <li><a href="about-vsb.html" class="hover:text-gray-300">About VSB</a></li>
+            <li><a href="why-vlaunchpad.html" class="hover:text-gray-300">Why V-LaunchPad</a></li>
+            <li><a href="teams.html" class="hover:text-gray-300">Teams</a></li>
+            <li><a href="faq.html" class="hover:text-gray-300">FAQ</a></li>
+            <li><a href="Vlaunch-expo.html" class="hover:text-gray-300">V Launch Expo</a></li>
+            <li><a href="./guidelines-vlaunchpad2k25.pdf" class="hover:text-gray-300">Guidelines</a></li>
+            <li><a href="contact.html" class="hover:text-gray-300">Contact</a></li>
+          </ul>
+        </div>
+        <script>
+          const menuButton = document.getElementById('menu-button');
+          const mobileMenu = document.getElementById('mobile-menu');
+          menuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+          });
+      
+          const aboutMenu = document.getElementById('about-menu');
+          const aboutParent = aboutMenu.parentElement;
+      
+          let aboutTimeout;
+      
+          aboutParent.addEventListener('mouseenter', () => {
+            clearTimeout(aboutTimeout);
+            aboutMenu.classList.remove('hidden');
+          });
+      
+          aboutParent.addEventListener('mouseleave', () => {
+            aboutTimeout = setTimeout(() => {
+              aboutMenu.classList.add('hidden');
+            }, 300); // 5 seconds delay
+          });
+        </script>
+      </header>
+
+    <!-- FAQ Section -->
+    <main class="py-16">
+        <div class="container mx-auto px-6">
+            <h2 class="text-4xl font-bold text-center text-[#841a1a] mb-12">Frequently Asked Questions</h2>
+
+            <!-- FAQ Categories -->
+            <div class="space-y-12">
+                <!-- General Information -->
+                <div>
+                    <h3 class="text-2xl font-semibold text-[#841a1a] mb-4">General Information</h3>
+                    <ul class="list-disc pl-6 text-gray-600 space-y-3">
+                        <li><strong>What is V-Launch Pad?</strong>
+                            <p>V-Launch Pad is a flagship business idea and startup pitching competition hosted by VIT-AP University, fostering innovation and collaboration among entrepreneurs and students.</p>
+                        </li>
+                        <li><strong>When and where is the event taking place?</strong>
+                            <p>April 4–5, 2025, at the Student Activity Center (SAC) Building, VIT-AP University, Amaravati, Andhra Pradesh.</p>
+                        </li>
+                        <li><strong>Who can participate in the competition?</strong>
+                            <p>Aspiring entrepreneurs, early-stage startups, and students interested in entrepreneurship.</p>
+                        </li>
+                        <li><strong>How do I register for the event?</strong>
+                            <p>Register through the official VIT-AP University website by February 15, 2025.</p>
+                        </li>
+                        <li><strong>What is the registration fee?</strong>
+                            <p>A nominal fee of ₹4750 is charged for participation.</p>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Event Tracks -->
+                <div>
+                    <h3 class="text-2xl font-semibold text-[#841a1a] mb-4">Event Tracks</h3>
+                    <ul class="list-disc pl-6 text-gray-600 space-y-3">
+                        <li><strong>What are the different competition tracks?</strong>
+                            <p>There are three tracks: Ideation Contest, Startup VC Pitching, and VIT-AP Idea Pitching.</p>
+                        </li>
+                        <li><strong>What are the prizes for the competition?</strong>
+                            <p>Winners receive ₹1 Lakh each along with mentorship, mementos, and funding opportunities.</p>
+                        </li>
+                        <li><strong>Do participants get guidance before the competition?</strong>
+                            <p>Yes, orientation sessions will be held from February 17 to March 7, 2025.</p>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Submission and Screening -->
+                <div>
+                    <h3 class="text-2xl font-semibold text-[#841a1a] mb-4">Submission and Screening</h3>
+                    <ul class="list-disc pl-6 text-gray-600 space-y-3">
+                        <li><strong>What documents or materials are required for submission?</strong>
+                            <p>An initial proposal or pitch deck is required by February 20, 2025.</p>
+                        </li>
+                        <li><strong>How are finalists selected?</strong>
+                            <p>Finalists are chosen through preliminary screening held between March 15–20, 2025.</p>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Event Days -->
+                <div>
+                    <h3 class="text-2xl font-semibold text-[#841a1a] mb-4">On the Event Days</h3>
+                    <ul class="list-disc pl-6 text-gray-600 space-y-3">
+                        <li><strong>What activities are planned during the event?</strong>
+                            <p>Activities include an opening ceremony, presentations, networking, and awards ceremony.</p>
+                        </li>
+                        <li><strong>Are there networking opportunities?</strong>
+                            <p>Yes, participants can connect with investors, mentors, and industry leaders.</p>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Logistics and Assistance -->
+                <div>
+                    <h3 class="text-2xl font-semibold text-[#841a1a] mb-4">Logistics and Assistance</h3>
+                    <ul class="list-disc pl-6 text-gray-600 space-y-3">
+                        <li><strong>Is accommodation provided for outstation participants?</strong>
+                            <p>Details will be shared closer to the event. Contact organizers for assistance.</p>
+                        </li>
+                        <li><strong>Who can I contact for more information?</strong>
+                            <p>Email: convenor.vlaunchpad@vitap.ac.in</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-[#841a1a] text-white py-6 text-center">
+        <p>&copy; 2025 V-LaunchPad. All rights reserved.</p>
+        <div class="flex justify-center mt-4 space-x-4">
+            <!-- Instagram Icon -->
+            <a href="https://www.instagram.com/vlaunchpad_vitap/" target="_blank" class="text-white hover:underline flex items-center">
+                <i class="fa-brands fa-instagram text-xl mr-2"></i>
+                Instagram
+            </a>
+            <!-- LinkedIn Icon -->
+            <a href="https://www.linkedin.com/company/v-launchpad/" target="_blank" class="text-white hover:underline flex items-center">
+                <i class="fa-brands fa-linkedin text-xl mr-2"></i>
+                LinkedIn
+            </a>
+            <!--Youtube Icon-->
+            <a href="https://www.youtube.com/@V-LaunchpadVIT-AP" target="_blank" class="text-white hover:underline flex items-center">
+                <i class="fa-brands fa-youtube text-xl mr-2"></i>
+                Youtube
+            </a>
+        </div>
+        <!-- Font Awesome CDN -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/js/all.min.js" crossorigin="anonymous"></script>
+    </footer>
+</body>
+</html>
